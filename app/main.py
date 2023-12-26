@@ -32,8 +32,8 @@ def get_all_notes(skip: int = 0, limit: int = 10, db: Session = Depends(get_db))
 
 
 @app.get('/notes/{note_id}', response_model=schemas.Note)
-def get_blog_post_by_id(post_id: int, db: Session = Depends(get_db)):
-    note = crud.get_note_by_id(db, post_id)
+def get_note_by_id(note_id: int, db: Session = Depends(get_db)):
+    note = crud.get_note_by_id(db, note_id)
     if note is None:
         raise HTTPException(status_code=404, detail="This ID does not exist.")
     return note

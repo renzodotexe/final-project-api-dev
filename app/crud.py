@@ -20,24 +20,24 @@ def get_existing_note(db: Session, author: str, title: str, content: str):
     ).first()
 
 
-def create_note(db: Session, blogpost: schemas.NoteCreate):
-    db_post = models.Note(**blogpost.model_dump())
-    db.add(db_post)
+def create_note(db: Session, note: schemas.NoteCreate):
+    db_note = models.Note(**note.model_dump())
+    db.add(db_note)
     db.commit()
-    db.refresh(db_post)
-    return db_post
+    db.refresh(db_note)
+    return db_note
 
 
-def update_note(db: Session, id: int, blogpost: schemas.NoteUpdate):
-    db_post = db.query(models.Note).filter(models.Note.id == id).first()
-    if db_post:
-        for field, value in blogpost.model_dump(exclude_unset=True).items():
-            setattr(db_post, field, value)
+def update_note(db: Session, id: int, note: schemas.NoteUpdate):
+    db_note = db.query(models.Note).filter(models.Note.id == id).first()
+    if db_note:
+        for field, value in note.model_dump(exclude_unset=True).items():
+            setattr(db_note, field, value)
         db.commit()
-        db.refresh(db_post)
-    return db_post
+        db.refresh(db_note)
+    return db_note
 
 
-def delete_note(db: Session, post: models.Note):
-    db.delete(post)
+def delete_note(db: Session, note: models.Note):
+    db.delete(note)
     db.commit()
