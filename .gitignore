@@ -1,7 +1,7 @@
 # created by virtualenv automatically
 .venv/Lib
-.venv/Lib
 .idea
+.venv
 .ipynb_checkpoints
 .mypy_cache
 .vscode
@@ -19,7 +19,6 @@ env3.*
 env
 docs_build
 venv
-.venv
 docs.zip
 archive.zip
 test_main.http

@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Gitignore update">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,8 +79,8 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\RENZO\PycharmProjects\final-project-api-dev\.venv" />
       <recent name="C:\Users\RENZO\PycharmProjects\final-project-api-dev" />
+      <recent name="C:\Users\RENZO\PycharmProjects\final-project-api-dev\.venv" />
       <recent name="C:\Users\RENZO\PycharmProjects\final-project-api-dev\app" />
     </key>
   </component>
@@ -99,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703595291762</updated>
       <workItem from="1703595296369" duration="4761000" />
-      <workItem from="1703600648497" duration="1599000" />
+      <workItem from="1703600648497" duration="1696000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -213,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703602583561</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Gitignore update">
+      <option name="closed" value="true" />
+      <created>1703602858867</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1703602858867</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +251,7 @@
     <MESSAGE value="Structured compose layou" />
     <MESSAGE value="Structured compose layout" />
     <MESSAGE value="Preparing container requirements for hashing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Preparing container requirements for hashing" />
+    <MESSAGE value="Gitignore update" />
+    <option name="LAST_COMMIT_MESSAGE" value="Gitignore update" />
   </component>
 </project>
