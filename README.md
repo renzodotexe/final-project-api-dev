@@ -2,7 +2,7 @@
 
 ## Beschrijving
 
-Dit basisproject implementeert een RESTful API voor het beheren van notities met behulp van FastAPI.
+Dit eindproject implementeert een RESTful API voor het beheren van notities met behulp van FastAPI. HEt basisproject was gebaseerd op een blog, voor het eindproject werd dit een notitiesysteem.
 
 ## Gehoste API
 
