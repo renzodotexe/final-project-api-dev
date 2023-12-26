@@ -2,6 +2,7 @@ from pydantic import BaseModel
 
 
 class NoteBase(BaseModel):
+    author: str | None = None
     title: str
     content: str
 
