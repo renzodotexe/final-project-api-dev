@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+ notes-api:
+  image: renzodotexe/final-project-api-dev
+  ports:
+    - "8000:8000"
+  volumes:
+    - db_volume:/code/sqlitedb
+
+volumes:
+  db_volume:
