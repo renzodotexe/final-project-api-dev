@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Structured compose layout">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +38,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -97,7 +99,7 @@
       <option name="presentableId" value="Default" />
       <updated>1703595291762</updated>
       <workItem from="1703595296369" duration="4761000" />
-      <workItem from="1703600648497" duration="1354000" />
+      <workItem from="1703600648497" duration="1599000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -203,7 +205,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703599717840</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Preparing container requirements for hashing">
+      <option name="closed" value="true" />
+      <created>1703602583561</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703602583561</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +241,7 @@
     <MESSAGE value="Update" />
     <MESSAGE value="Structured compose layou" />
     <MESSAGE value="Structured compose layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="Structured compose layout" />
+    <MESSAGE value="Preparing container requirements for hashing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Preparing container requirements for hashing" />
   </component>
 </project>
