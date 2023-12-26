@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, Index, ForeignKey
 from database import Base
 
+
 class Note(Base):
     __tablename__ = "notes"
 

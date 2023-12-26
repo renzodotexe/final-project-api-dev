@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Reformat file">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/schemas.py" afterDir="false" />
-    </list>
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Added author entity" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703595291762</updated>
-      <workItem from="1703595296369" duration="1449000" />
+      <workItem from="1703595296369" duration="1531000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -108,7 +104,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703596552834</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added author entity">
+      <option name="closed" value="true" />
+      <created>1703596774808</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703596774808</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +122,7 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Started structuring database" />
     <MESSAGE value="Reformat file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reformat file" />
+    <MESSAGE value="Added author entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added author entity" />
   </component>
 </project>
