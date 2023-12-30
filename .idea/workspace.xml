@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Gitignore update">
-      <change afterPath="$PROJECT_DIR$/app/testing.py" afterDir="false" />
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Started working on testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/crud.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/crud.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/testing.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +110,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="4220000" />
+      <workItem from="1703944671590" duration="5009000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -250,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703602940067</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Added another get endpoint">
+      <option name="closed" value="true" />
+      <created>1703948997006</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1703948997006</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Started working on testing">
+      <option name="closed" value="true" />
+      <created>1703949014818</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1703949014818</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +294,8 @@
     <MESSAGE value="Structured compose layout" />
     <MESSAGE value="Preparing container requirements for hashing" />
     <MESSAGE value="Gitignore update" />
-    <option name="LAST_COMMIT_MESSAGE" value="Gitignore update" />
+    <MESSAGE value="Added another get endpoint" />
+    <MESSAGE value="Started working on testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started working on testing" />
   </component>
 </project>
