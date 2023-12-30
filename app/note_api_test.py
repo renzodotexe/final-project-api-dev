@@ -72,5 +72,5 @@ def test_update_note_by_id():
 
 
 def test_delete_note_by_id():
-    response = requests.delete('http://127.0.0.1:8000/notes/1')
+    response = requests.delete('http://127.0.0.1:8000/notes/1', headers=headers)
     assert response.status_code == 200

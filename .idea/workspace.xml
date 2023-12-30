@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="OAuth implemented">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Delete endpoints secured">
+      <change beforePath="$PROJECT_DIR$/app/note_api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/note_api_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +111,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="20895000" />
+      <workItem from="1703944671590" duration="21001000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -466,7 +465,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703969255800</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="Delete endpoints secured">
+      <option name="closed" value="true" />
+      <created>1703969407270</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1703969407270</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -485,7 +492,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Added author entity" />
     <MESSAGE value="Created endpoints" />
     <MESSAGE value="Update README.md" />
     <MESSAGE value="Reformat file" />
@@ -510,7 +516,8 @@
     <MESSAGE value="Refined reset function so users delete too" />
     <MESSAGE value="Testing creating users" />
     <MESSAGE value="OAuth implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="OAuth implemented" />
+    <MESSAGE value="Delete endpoints secured" />
+    <option name="LAST_COMMIT_MESSAGE" value="Delete endpoints secured" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project_api_dev$view_db.coverage" NAME="view-db Coverage Results" MODIFIED="1703966013416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sqlitedb" />
