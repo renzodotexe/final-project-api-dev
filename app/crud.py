@@ -51,6 +51,7 @@ def delete_note(db: Session, note: models.Note):
 
 def reset_database(db: Session):
     db.query(models.Note).delete()
+    db.query(models.User).delete()
     db.commit()
 
 
