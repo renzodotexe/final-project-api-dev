@@ -45,3 +45,8 @@ def update_note(db: Session, id: int, note: schemas.NoteUpdate):
 def delete_note(db: Session, note: models.Note):
     db.delete(note)
     db.commit()
+
+
+def reset_database(db: Session):
+    db.query(models.Note).delete()
+    db.commit()

@@ -71,3 +71,9 @@ def delete_note(note_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="This ID does not exist.")
     crud.delete_note(db, note)
     return {"message": "Note permanently deleted."}
+
+
+@app.delete("/reset-database")
+def reset_database(db: Session = Depends(get_db)):
+    crud.reset_database(db)
+    return {"message": "Database reset successfully."}
