@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Only testing get-endpoints for now">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Testing in github">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/testing.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/docker-image.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/docker-image.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/note_api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/note_api_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +112,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="9793000" />
+      <workItem from="1703944671590" duration="10092000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -295,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703951485050</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Testing in github">
+      <option name="closed" value="true" />
+      <created>1703955230511</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1703955230511</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,6 +342,7 @@
     <MESSAGE value="Refactor" />
     <MESSAGE value="Deprecated warnings fixed by changing affected lines" />
     <MESSAGE value="Only testing get-endpoints for now" />
-    <option name="LAST_COMMIT_MESSAGE" value="Only testing get-endpoints for now" />
+    <MESSAGE value="Testing in github" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testing in github" />
   </component>
 </project>
