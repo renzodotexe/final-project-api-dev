@@ -21,6 +21,7 @@ def test_create_a_note():
 def test_get_all_notes():
     response = requests.get('http://127.0.0.1:8000/notes')
     assert response.status_code == 200
+    assert response.json() != {}  # Niet leeg
 
 
 # Functie om een specifieke notitie op basis van een id op te halen en te testen, in dit geval de eerste notitie
