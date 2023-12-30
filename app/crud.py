@@ -1,6 +1,5 @@
 from sqlalchemy.orm import Session
 import auth
-
 import models
 import schemas
 

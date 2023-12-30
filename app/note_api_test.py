@@ -1,9 +1,14 @@
 import requests
 
 
+headers = {
+    'Authorization': 'Bearer MOCKING_TOKEN?'
+}
+
+
 def test_cleanup_database_before_testing():
     # Verwijder alle gegevens uit de database voordat de tests beginnen
-    response = requests.delete('http://127.0.0.1:8000/reset-database')
+    response = requests.delete('http://127.0.0.1:8000/reset-database', headers=headers)
     assert response.status_code == 200
 
 def test_create_a_user():

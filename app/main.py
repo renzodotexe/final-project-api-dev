@@ -2,7 +2,8 @@ from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine
 from typing import List
-
+from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+import auth
 import crud
 import models
 import schemas
@@ -15,6 +16,7 @@ if not os.path.exists('../sqlitedb'):
 models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 
 # Dependency
@@ -73,10 +75,13 @@ def delete_note(note_id: int, db: Session = Depends(get_db)):
     return {"message": "Note permanently deleted."}
 
 
-@app.delete("/reset-database")
-def reset_database(db: Session = Depends(get_db)):
+@app.delete("/reset-database")  # SECURED
+def reset_database(db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
     crud.reset_database(db)
     return {"message": "Database reset successfully."}
+
+
+# ---- USERS
 
 
 @app.post("/users/", response_model=schemas.User)
@@ -85,3 +90,22 @@ def create_user(user: schemas.UserCreate, db: Session = Depends(get_db)):
     if db_user:
         raise HTTPException(status_code=400, detail="Email already registered")
     return crud.create_user(db=db, user=user)
+
+
+@app.post("/token")
+def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
+    # Try to authenticate the user
+    user = auth.authenticate_user(db, form_data.username, form_data.password)
+    if not user:
+        raise HTTPException(
+            status_code=401,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
+    # Add the JWT case sub with the subject(user)
+    access_token = auth.create_access_token(
+        data={"sub": user.email}
+    )
+
+    # Return the JWT as a bearer token to be placed in the headers
+    return {"access_token": access_token, "token_type": "bearer"}
