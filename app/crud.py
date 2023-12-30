@@ -12,6 +12,10 @@ def get_note_by_id(db: Session, id: int):
     return db.query(models.Note).filter(models.Note.id == id).first()
 
 
+def get_note_by_author(db: Session, author: str):
+    return db.query(models.Note).filter(models.Note.author == author).all()
+
+
 def get_existing_note(db: Session, author: str, title: str, content: str):
     return db.query(models.Note).filter(
         models.Note.author == author,

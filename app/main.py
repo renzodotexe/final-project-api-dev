@@ -1,10 +1,11 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
+from database import SessionLocal, engine
+from typing import List
 
 import crud
 import models
 import schemas
-from database import SessionLocal, engine
 import os
 
 if not os.path.exists('../sqlitedb'):
@@ -36,6 +37,14 @@ def get_note_by_id(note_id: int, db: Session = Depends(get_db)):
     note = crud.get_note_by_id(db, note_id)
     if note is None:
         raise HTTPException(status_code=404, detail="This ID does not exist.")
+    return note
+
+
+@app.get("/notes/author/{author}", response_model=List[schemas.Note])
+def get_note_by_author(author: str, db: Session = Depends(get_db)):
+    note = crud.get_note_by_author(db, author=author)
+    if not note:
+        raise HTTPException(status_code=404, detail=f"No notes found by author: {author}")
     return note
 
 
