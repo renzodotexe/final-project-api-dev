@@ -22,7 +22,7 @@ jobs:
         run: |
           cd app
           uvicorn main:app --host 0.0.0.0 --port 8000 &
-          sleep 60  # Voeg een wachttijd van 60 seconden toe
+          sleep 5  # Voeg een wachttijd van 5 seconden toe, zodat uvicorn goed kan starten
           
 
       - name: Run tests
