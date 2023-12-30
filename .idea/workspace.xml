@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Testing in github">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/testing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testing.yml" afterDir="false" />
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Added reset database function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/note_api_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/note_api_test.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="10473000" />
+      <workItem from="1703944671590" duration="12165000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -319,7 +320,23 @@
       <option name="project" value="LOCAL" />
       <updated>1703955674265</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Testing in github">
+      <option name="closed" value="true" />
+      <created>1703955878525</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1703955878525</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Added reset database function">
+      <option name="closed" value="true" />
+      <created>1703957238571</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1703957238571</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,6 +373,7 @@
     <MESSAGE value="Deprecated warnings fixed by changing affected lines" />
     <MESSAGE value="Only testing get-endpoints for now" />
     <MESSAGE value="Testing in github" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing in github" />
+    <MESSAGE value="Added reset database function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added reset database function" />
   </component>
 </project>
