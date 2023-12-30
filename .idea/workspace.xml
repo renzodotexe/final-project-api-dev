@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Refinements">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Update requirements.txt">
+      <change afterPath="$PROJECT_DIR$/app/auth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +110,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="15355000" />
+      <workItem from="1703944671590" duration="15418000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -416,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703963133182</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Update requirements.txt">
+      <option name="closed" value="true" />
+      <created>1703963802118</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1703963802118</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -455,8 +463,8 @@
     <MESSAGE value="Testing in github" />
     <MESSAGE value="Added reset database function" />
     <MESSAGE value="Testing workflow" />
-    <MESSAGE value="Update requirements.txt" />
     <MESSAGE value="Refinements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refinements" />
+    <MESSAGE value="Update requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update requirements.txt" />
   </component>
 </project>
