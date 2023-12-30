@@ -19,5 +19,5 @@ class NoteCreate(NoteBase):
 class Note(NoteBase):
     id: int
 
-    class Config:
-        orm_mode = True
+    class ConfigDict:
+        from_attributes = True
