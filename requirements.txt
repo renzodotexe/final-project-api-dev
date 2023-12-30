@@ -4,3 +4,6 @@ uvicorn
 sqlalchemy
 pytest
 requests
+passlib
+argon2_cffi
+bcrypt
