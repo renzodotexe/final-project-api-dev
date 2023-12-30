@@ -20,7 +20,11 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "https://renzodotexe.github.io",
+        "http://localhost",
+        "http://localhost:63342"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
