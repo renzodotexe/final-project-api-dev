@@ -4,16 +4,117 @@
 </head>
 <body>
     <div x-data="{
-        responsedata: null,
+        responsedataSingle: null,
+        responsedataAll: null,
+        newNoteFormVisible: false,
+        newNote: {
+            author: '',
+            title: '',
+            content: '',
+        },
         async getData() {
-            this.responsedata = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+            try {
+                this.responsedataSingle = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+            } catch (error) {
+                this.responsedataSingle = null;
+                alert('Er is een fout opgetreden bij het ophalen van de gegevens.');
+            }
+        },
+        async getAllNotes() {
+            try {
+                this.responsedataAll = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+            } catch (error) {
+                this.responsedataAll = null;
+                alert('Er is een fout opgetreden bij het ophalen van alle notities.');
+            }
+        },
+        async createNewNote() {
+            // Show the form to create a new note
+            this.newNoteFormVisible = true;
+        },
+        async saveNewNote() {
+            try {
+                // Fetch API endpoint to create a new note
+                const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        // Include any other headers, e.g., authorization
+                    },
+                    body: JSON.stringify({
+                        author: this.newNote.author,
+                        title: this.newNote.title,
+                        content: this.newNote.content,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to create a new note.');
+                }
+
+                // Hide the form after creating the new note
+                this.newNoteFormVisible = false;
+
+                // Refresh data for all notes
+                await this.getAllNotes();
+            } catch (error) {
+                console.error(error);
+                alert('Er is een fout opgetreden bij het maken van een nieuwe notitie.');
+            }
+        },
+        async getNotesByRenzo() {
+            // Fetch notes by author 'Renzo'
+            const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/author/Renzo');
+            if (response.ok) {
+                this.responsedataAll = await response.json();
+            } else {
+                console.error('Failed to fetch notes by Renzo');
+            }
         }
     }">
         <button x-on:click="getData">GET first note</button>
-        <div x-show="responsedata">
-            <p>Author: <strong x-text="responsedata[0].author"></strong></p>
-            <p>Title: <strong x-text="responsedata[0].title"></strong></p>
-            <p>Content: <strong x-text="responsedata[0].content"></strong></p>
+        <button x-on:click="getAllNotes">GET all notes</button>
+        <button x-on:click="createNewNote">POST new note</button>
+        <button x-on:click="getNotesByRenzo">GET notes from Renzo</button>
+
+        <!-- Display single note -->
+        <div x-show="responsedataSingle">
+            <p>Author: <strong x-text="responsedataSingle[0]?.author"></strong></p>
+            <p>Title: <strong x-text="responsedataSingle[0]?.title"></strong></p>
+            <p>Content: <strong x-text="responsedataSingle[0]?.content"></strong></p>
+            <p>ID: <strong x-text="responsedataSingle[0]?.id"></strong></p>
+        </div>
+
+        <!-- Display all notes -->
+        <div x-show="responsedataAll !== null">
+            <template x-if="responsedataAll.length > 0">
+                <template x-for="(note, index) in responsedataAll" :key="index">
+                    <div>
+                        <p>Author: <strong x-text="note.author"></strong></p>
+                        <p>Title: <strong x-text="note.title"></strong></p>
+                        <p>Content: <strong x-text="note.content"></strong></p>
+                        <p>ID: <strong x-text="note.id"></strong></p>
+                        <hr>
+                    </div>
+                </template>
+            </template>
+            <template x-if="responsedataAll === null || responsedataAll.length === 0">
+                <p>Geen notities gevonden.</p>
+            </template>
+        </div>
+
+        <!-- Form for creating a new note -->
+        <div x-show="newNoteFormVisible">
+            <label for="author">Author:</label>
+            <input x-model="newNote.author" type="text" id="author">
+
+            <label for="title">Title:</label>
+            <input x-model="newNote.title" type="text" id="title">
+
+            <label for="content">Content:</label>
+            <textarea x-model="newNote.content" id="content"></textarea>
+
+            <button x-on:click="saveNewNote">Save new note</button>
         </div>
     </div>
 </body>
