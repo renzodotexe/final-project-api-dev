@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Update frontend">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="CORS">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,15 +118,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="23671000" />
-    </task>
-    <task id="LOCAL-00004" summary="Reformat file">
-      <option name="closed" value="true" />
-      <created>1703596552834</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1703596552834</updated>
+      <workItem from="1703944671590" duration="24378000" />
     </task>
     <task id="LOCAL-00005" summary="Added author entity">
       <option name="closed" value="true" />
@@ -511,7 +504,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703971847525</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="CORS">
+      <option name="closed" value="true" />
+      <created>1703972198686</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1703972198686</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -553,9 +554,9 @@
     <MESSAGE value="Delete endpoints secured" />
     <MESSAGE value="Fixed OAuth testing issue" />
     <MESSAGE value="Started working on frontend" />
-    <MESSAGE value="CORS" />
     <MESSAGE value="Update frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update frontend" />
+    <MESSAGE value="CORS" />
+    <option name="LAST_COMMIT_MESSAGE" value="CORS" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project_api_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1703972150411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
