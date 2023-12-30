@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Testing workflow">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/testing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/testing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <workItem from="1703595296369" duration="4761000" />
       <workItem from="1703600648497" duration="2827000" />
       <workItem from="1703860174193" duration="5072000" />
-      <workItem from="1703944671590" duration="13303000" />
+      <workItem from="1703944671590" duration="13468000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -376,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703961570476</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Testing workflow">
+      <option name="closed" value="true" />
+      <created>1703961732106</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1703961732106</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
