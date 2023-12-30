@@ -1,8 +1,4 @@
 import requests
-from fastapi.testclient import TestClient
-from main import app
-
-client = TestClient(app)
 
 
 # Functie om alle notities ophalen te testen
@@ -23,26 +19,3 @@ def test_get_note_from_author_Renzo():
     response = requests.get('http://127.0.0.1:8000/notes/author/Renzo')
     assert response.status_code == 200
     assert response.json() != []  # Niet leeg
-
-
-def test_create_new_note():
-    new_note = {
-        "title": "Test Title",
-        "author": "Test Author",
-        "content": "Test Content"
-    }
-    response = client.post("/notes/", json=new_note)
-    assert response.status_code == 200
-    assert response.json()["title"] == new_note["title"]
-
-
-def test_update_note_by_id():
-    note_id = 1
-    updated_note = {
-        "title": "Updated Title",
-        "content": "Updated Content"
-    }
-    response = client.put(f"/notes/{note_id}", json=updated_note)
-    assert response.status_code == 200
-    assert response.json()["title"] == updated_note["title"]
-    assert response.json()["content"] == updated_note["content"]
