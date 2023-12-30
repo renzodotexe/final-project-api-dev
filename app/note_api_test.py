@@ -6,9 +6,17 @@ def test_cleanup_database_before_testing():
     response = requests.delete('http://127.0.0.1:8000/reset-database')
     assert response.status_code == 200
 
+def test_create_a_user():
+    # Voeg een user toe aan de database
+    response = requests.post('http://127.0.0.1:8000/users/', json={
+        "email": "email@example.com",
+        "password": "password"
+    })
+    assert response.status_code == 200
+
 
 def test_create_a_note():
-    # Voeg een notitie toe aan de database voordat de tests beginnen
+    # Voeg een notitie toe aan de database
     response = requests.post('http://127.0.0.1:8000/notes/', json={
         "title": "Test",
         "author": "Renzo",
