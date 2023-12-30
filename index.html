@@ -6,11 +6,15 @@
     <div x-data="{
         responsedata: null,
         async getData() {
-            this.responsedata = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+            this.responsedata = await (await fetch('http://127.0.0.1:8000/notes/')).json();
         }
     }">
-        <button x-on:click="getData">Send get request</button>
-        Data returned: <strong x-text="responsedata[0].title">Placeholder</strong>
+        <button x-on:click="getData">GET first note</button>
+        <div x-show="responsedata">
+            <p>Author: <strong x-text="responsedata[0].author"></strong></p>
+            <p>Title: <strong x-text="responsedata[0].title"></strong></p>
+            <p>Content: <strong x-text="responsedata[0].content"></strong></p>
+        </div>
     </div>
 </body>
 </html>
