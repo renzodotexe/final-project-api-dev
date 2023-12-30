@@ -1,9 +1,9 @@
-name: Testing Python
+name: Unit Testing by PyTest
 on: push
 jobs:
   delivery:
     runs-on: ubuntu-latest
-    name: Testing Python
+    name: Unit Testing by PyTest
     steps:
       - name: Check out repository
         uses: actions/checkout@v1
@@ -21,8 +21,7 @@ jobs:
       - name: Start FastAPI server
         run: |
           cd app
-          uvicorn main:app --host 0.0.0.0 --port 8000 &
-          sleep 30  # Voeg een wachttijd van 30 seconden toe
+          uvicorn main:app --host 0.0.0.0 --port 8000
           
 
       - name: Run tests
