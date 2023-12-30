@@ -67,7 +67,7 @@ def update_note_by_id(note_id: int, note: schemas.NoteUpdate, db: Session = Depe
 
 
 @app.delete('/notes/{note_id}', response_model=None)
-def delete_note(note_id: int, db: Session = Depends(get_db)):
+def delete_note(note_id: int, db: Session = Depends(get_db), token: str = Depends(oauth2_scheme)):
     note = crud.get_note_by_id(db, note_id)
     if note is None:
         raise HTTPException(status_code=404, detail="This ID does not exist.")
