@@ -21,7 +21,8 @@ jobs:
       - name: Start FastAPI server
         run: |
           cd app
-          uvicorn main:app --host 0.0.0.0 --port 8000
+          uvicorn main:app --host 0.0.0.0 --port 8000 &
+          sleep 60  # Voeg een wachttijd van 60 seconden toe
           
 
       - name: Run tests
