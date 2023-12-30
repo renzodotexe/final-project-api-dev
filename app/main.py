@@ -1,4 +1,5 @@
 from fastapi import Depends, FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from database import SessionLocal, engine
 from typing import List
@@ -26,6 +27,15 @@ def get_db():
         yield db
     finally:
         db.close()
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get('/notes/', response_model=list[schemas.Note])
