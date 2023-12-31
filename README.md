@@ -4,6 +4,14 @@
 
 Dit eindproject implementeert een RESTful API voor het beheren van notities met behulp van FastAPI. Het basisproject was gebaseerd op een blog, voor het eindproject werd dit een notitiesysteem.
 
+### Volbrachte aanvullingen
+
+- 2.1
+- 2.2
+- 3.1
+- 3.1.1
+- 3.1.2
+
 ## Hosting
 
 ### API
