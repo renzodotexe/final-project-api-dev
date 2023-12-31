@@ -7,10 +7,10 @@ Dit eindproject implementeert een RESTful API voor het beheren van notities met 
 ### Volbrachte deelopdrachten
 
 - 1 ALGEMENE EISEN (+50%)
-- 2 FUNCTIE
+- 2 AANVULLINGEN: FUNCTIE
   - 2.1 (+5%) Test alle niet-GET endpoints
   - 2.2 (+5%) Zorg ervoor dat de testfile ook tijdens de GitHub Actions gerund wordt
-- 3 FRONT-END
+- 3 AANVULLINGEN: FRONT-END
   - 3.1 (+15%) Maak een front-end voor je applicatie die al je GET endpoints en POST endpoints bevat
     - 3.1.1 (+10%) Host de front-end op Netlify
     - 3.1.2 (+10%) Geef de front-end een leuke stijlgeving
