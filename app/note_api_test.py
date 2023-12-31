@@ -2,7 +2,7 @@ import requests
 
 
 headers = {
-    'Authorization': 'Bearer MOCKING_TOKEN?'
+    'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJyZW56b0BuYXMyNC5iZSIsImV4cCI6MTcwNDAzMzAzNn0.Zlih8Gk1GwO2vgcGx3EvqgZy9y1lRsMyHZLdtdkfHqc'
 }
 
 
