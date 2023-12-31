@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for GET Note By Author">
-      <change afterPath="$PROJECT_DIR$/screenshots/reset-database-2.png" afterDir="false" />
-    </list>
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for DELETE Reset Database" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -120,23 +118,7 @@
       <workItem from="1703944671590" duration="28341000" />
       <workItem from="1704023360512" duration="1836000" />
       <workItem from="1704031563373" duration="1121000" />
-      <workItem from="1704032836187" duration="3627000" />
-    </task>
-    <task id="LOCAL-00020" summary="Added a third get test">
-      <option name="closed" value="true" />
-      <created>1703949739398</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1703949739398</updated>
-    </task>
-    <task id="LOCAL-00021" summary="Refactor">
-      <option name="closed" value="true" />
-      <created>1703950796627</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1703950796627</updated>
+      <workItem from="1704032836187" duration="3952000" />
     </task>
     <task id="LOCAL-00022" summary="Deprecated warnings fixed by changing affected lines">
       <option name="closed" value="true" />
@@ -514,7 +496,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704036126639</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="Demo screenshots for DELETE Reset Database">
+      <option name="closed" value="true" />
+      <created>1704036575235</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1704036575235</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Demo screenshots for DELETE Reset Database">
+      <option name="closed" value="true" />
+      <created>1704036580588</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1704036580588</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +531,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Testing workflow" />
     <MESSAGE value="Refinements" />
     <MESSAGE value="Update requirements.txt" />
     <MESSAGE value="Started working on implementing hashing + oauth" />
@@ -558,7 +555,8 @@
     <MESSAGE value="Demo screenshots for PUT Update Note By ID" />
     <MESSAGE value="Demo screenshots for DELETE Note By ID" />
     <MESSAGE value="Demo screenshots for GET Note By Author" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for GET Note By Author" />
+    <MESSAGE value="Demo screenshots for DELETE Reset Database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for DELETE Reset Database" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project_api_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1703972150411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
