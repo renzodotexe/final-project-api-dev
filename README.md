@@ -10,9 +10,81 @@ Deze API is gehost op Okteto Cloud. Je kunt de API-documentatie en voorbeelden v
 
 [Okteto Cloud Container](https://notes-api-renzodotexe.cloud.okteto.net/docs#/)
 
+## Gehoste Frontend
+
+Deze API heeft ook een frontend en is gehost op Netlify. Je kunt deze uitproberen op de volgende locatie:
+
+[Netlify Frontend](https://notes-api-renzodotexe.netlify.app)
+
 ## Aantoonbare Werking
 
 Hieronder vind je screenshots die de werking van elk API-endpoint demonstreren.
+
+### Weergeven Alle Notities
+
+- **Alle Notities**
+  ![Alle Notities](screenshots/get-all-notes-1.png)
+
+### Aanmaken Nieuwe Notitie
+
+- **Request Body**
+  ![Verzoekbody](screenshots/create-note-1.png)
+- **Succes**
+  ![Succes](screenshots/create-note-2.png)
+- **Fout bij duplicaat**
+  ![Fout bij duplicaat](screenshots/create-note-3.png)
+- **Verkeerd datatype**
+  ![Verkeerd datatype](screenshots/create-note-4.png)
+
+### Ophalen Specifieke Notitie (op ID)
+
+- **Geldige ID**
+  ![Geldige ID](screenshots/get-note-by-id-1.png)
+- **Ongeldige ID**
+  ![Ongeldige ID](screenshots/get-note-by-id-2.png)
+- **Verkeerd datatype**
+  ![Verkeerd datatype](screenshots/get-note-by-id-3.png)
+
+### Bijwerken Notitie (op ID)
+
+- **Gewijzigde Waarden**
+  ![Gewijzigde Waarden](screenshots/update-note-by-id-1.png)
+
+### Verwijderen Notitie (op ID)
+
+- **Succes**
+  ![Succes](screenshots/delete-note-1.png)
+- **Fout bij ongeldige ID**
+  ![Fout bij ongeldige ID](screenshots/delete-note-2.png)
+- **Verkeerd datatype**
+  ![Verkeerd datatype](screenshots/delete-note-3.png)
+- **Niet Geautoriseerd**
+  ![Niet Geautoriseerd](screenshots/delete-note-4.png)
+
+### Ophalen Specifieke Notitie (op Auteur)
+
+- **Geldige ID**
+  ![Geldige ID](screenshots/get-note-by-author-1.png)
+- **Ongeldige ID**
+  ![Ongeldige ID](screenshots/get-note-by-author-2.png)
+
+### Reset Database
+
+- **Succes**
+  ![Succes](screenshots/reset-database-1.png)
+- **Niet Geautoriseerd**
+  ![Niet Geautoriseerd](screenshots/reset-database-2.png)
+- **Bewijs**
+  ![Bewijs](screenshots/reset-database-3.png)
+
+### Aanmaken Nieuwe Gebruiker
+
+- **Request Body**
+  ![Verzoekbody](screenshots/create-user-1.png)
+- **Fout bij duplicaat**
+  ![Fout bij duplicaat](screenshots/create-user-2.png)
+- **Verkeerd datatype**
+  ![Verkeerd datatype](screenshots/create-user-3.png)
 
 ## Volledige OpenAPI Documentatie
 
@@ -32,8 +104,8 @@ Screenshots van de volledige OpenAPI-docs pagina:
   ![DELETE - Verwijderen Notitie Op ID](screenshots/openapi-docs-6.png)
 - **GET - Zoeken Notitie Op Auteur**
   ![GET - Zoeken Notitie Op Auteur](screenshots/openapi-docs-7.png)
-- **POST - Volledige Database Reset**
-  ![POST - Volledige Database Reset](screenshots/openapi-docs-8.png)
+- **DELETE - Volledige Database Reset**
+  ![DELETE - Volledige Database Reset](screenshots/openapi-docs-8.png)
 - **POST - Nieuwe Gebruiker**
   ![POST - Nieuwe Gebruiker](screenshots/openapi-docs-9.png)
 - **POST - Login Access Token**
