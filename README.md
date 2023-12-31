@@ -15,6 +15,8 @@ Dit eindproject implementeert een RESTful API voor het beheren van notities met 
     - 3.1.1 (+10%) Host de front-end op Netlify
     - 3.1.2 (+10%) Geef de front-end een leuke stijlgeving
 
+Samen vormt dit een totaal van 95%.
+
 ## Hosting
 
 ### API
