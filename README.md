@@ -85,10 +85,12 @@ Hieronder vind je screenshots die de werking van elk API-endpoint demonstreren.
 
 - **Request Body**
   ![Verzoekbody](screenshots/create-user-1.png)
+- **Succes**
+  ![Succes](screenshots/create-user-2.png)
 - **Fout bij duplicaat**
-  ![Fout bij duplicaat](screenshots/create-user-2.png)
+  ![Fout bij duplicaat](screenshots/create-user-3.png)
 - **Verkeerd datatype**
-  ![Verkeerd datatype](screenshots/create-user-3.png)
+  ![Verkeerd datatype](screenshots/create-user-4.png)
 
 ## Volledige OpenAPI Documentatie
 

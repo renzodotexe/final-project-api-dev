@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for DELETE Reset Database" />
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for POST Create New User">
+      <change afterPath="$PROJECT_DIR$/screenshots/create-user-4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/create-user-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/create-user-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/screenshots/create-user-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/create-user-3.png" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -118,15 +124,7 @@
       <workItem from="1703944671590" duration="28341000" />
       <workItem from="1704023360512" duration="1836000" />
       <workItem from="1704031563373" duration="1121000" />
-      <workItem from="1704032836187" duration="3952000" />
-    </task>
-    <task id="LOCAL-00022" summary="Deprecated warnings fixed by changing affected lines">
-      <option name="closed" value="true" />
-      <created>1703951317013</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1703951317013</updated>
+      <workItem from="1704032836187" duration="4196000" />
     </task>
     <task id="LOCAL-00023" summary="Only testing get-endpoints for now">
       <option name="closed" value="true" />
@@ -512,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704036580588</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="Demo screenshots for POST Create New User">
+      <option name="closed" value="true" />
+      <created>1704036889051</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1704036889051</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +537,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Refinements" />
     <MESSAGE value="Update requirements.txt" />
     <MESSAGE value="Started working on implementing hashing + oauth" />
     <MESSAGE value="Users can now be created and their password is hashed" />
@@ -556,7 +561,8 @@
     <MESSAGE value="Demo screenshots for DELETE Note By ID" />
     <MESSAGE value="Demo screenshots for GET Note By Author" />
     <MESSAGE value="Demo screenshots for DELETE Reset Database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for DELETE Reset Database" />
+    <MESSAGE value="Demo screenshots for POST Create New User" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for POST Create New User" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project_api_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1703972150411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
