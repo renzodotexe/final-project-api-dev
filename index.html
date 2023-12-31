@@ -1,140 +1,173 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
     <script defer src="https://unpkg.com/alpinejs@3.5.0/dist/cdn.min.js"></script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 20px;
+    }
+
+    button {
+      padding: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      box-sizing: border-box;
+    }
+
+    div {
+      margin-bottom: 20px;
+    }
+
+    hr {
+      border: 1px solid #ccc;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
-<body>
-    <div x-data="{
-        responsedataSingle: null,
-        responsedataAll: null,
-        newNoteFormVisible: false,
-        newNote: {
-            author: '',
-            title: '',
-            content: '',
+<body x-data="{
+  responsedataSingle: null,
+  responsedataAll: null,
+  newNoteFormVisible: false,
+  newNote: {
+    author: '',
+    title: '',
+    content: '',
+  },
+  async getData() {
+    try {
+      this.responsedataSingle = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+      this.responsedataAll = null; // Clear all notes data
+      this.newNoteFormVisible = false; // Hide the form
+    } catch (error) {
+      this.responsedataSingle = null;
+      alert('Er is een fout opgetreden bij het ophalen van de gegevens.');
+    }
+  },
+  async getAllNotes() {
+    try {
+      this.responsedataAll = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
+      this.responsedataSingle = null; // Clear single note data
+      this.newNoteFormVisible = false; // Hide the form
+    } catch (error) {
+      this.responsedataAll = null;
+      alert('Er is een fout opgetreden bij het ophalen van alle notities.');
+    }
+  },
+  async createNewNote() {
+    this.newNoteFormVisible = true;
+    this.responsedataSingle = null; // Clear single note data
+    this.responsedataAll = null; // Clear all notes data
+  },
+  async saveNewNote() {
+    try {
+      // Voeg validatie toe voor de vereiste velden
+      if (!this.newNote.author || !this.newNote.title || !this.newNote.content) {
+        alert('Vul alle vereiste velden in.');
+        return;
+      }
+
+      const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
         },
-        async getData() {
-            try {
-                this.responsedataSingle = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
-                this.responsedataAll = null; // Clear all notes data
-                this.newNoteFormVisible = false; // Hide the form
-            } catch (error) {
-                this.responsedataSingle = null;
-                alert('Er is een fout opgetreden bij het ophalen van de gegevens.');
-            }
-        },
-        async getAllNotes() {
-            try {
-                this.responsedataAll = await (await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/')).json();
-                this.responsedataSingle = null; // Clear single note data
-                this.newNoteFormVisible = false; // Hide the form
-            } catch (error) {
-                this.responsedataAll = null;
-                alert('Er is een fout opgetreden bij het ophalen van alle notities.');
-            }
-        },
-        async createNewNote() {
-            this.newNoteFormVisible = true;
-            this.responsedataSingle = null; // Clear single note data
-            this.responsedataAll = null; // Clear all notes data
-        },
-        async saveNewNote() {
-        try {
-            // Voeg validatie toe voor de vereiste velden
-            if (!this.newNote.author || !this.newNote.title || !this.newNote.content) {
-                alert('Vul alle vereiste velden in.');
-                return;
-            }
+        body: JSON.stringify({
+          author: this.newNote.author,
+          title: this.newNote.title,
+          content: this.newNote.content,
+        }),
+      });
 
-            const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    author: this.newNote.author,
-                    title: this.newNote.title,
-                    content: this.newNote.content,
-                }),
-            });
+      if (!response.ok) {
+        throw new Error('Failed to create a new note.');
+      }
 
-            if (!response.ok) {
-                throw new Error('Failed to create a new note.');
-            }
+      this.newNoteFormVisible = false;
+      await this.getAllNotes();
 
-            this.newNoteFormVisible = false;
-            await this.getAllNotes();
+      // Reset de velden naar een lege staat
+      this.newNote = {
+        author: '',
+        title: '',
+        content: '',
+      };
+    } catch (error) {
+      console.error(error);
+      alert('Er is een fout opgetreden bij het maken van een nieuwe notitie.');
+    }
+  },
+  async getNotesByRenzo() {
+    const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/author/Renzo');
+    if (response.ok) {
+      this.responsedataAll = await response.json();
+      this.responsedataSingle = null; // Clear single note data
+      this.newNoteFormVisible = false; // Hide the form
+    } else {
+      console.error('Failed to fetch notes by Renzo');
+    }
+  }
+}">
+  <button x-on:click="getAllNotes">GET all notes</button>
+  <button x-on:click="getData">GET first note</button>
+  <button x-on:click="getNotesByRenzo">GET notes from Renzo</button>
+  <button x-on:click="createNewNote">POST new note</button>
 
-            // Reset de velden naar een lege staat
-            this.newNote = {
-                author: '',
-                title: '',
-                content: '',
-            };
-        } catch (error) {
-            console.error(error);
-            alert('Er is een fout opgetreden bij het maken van een nieuwe notitie.');
-        }
-    },
-        async getNotesByRenzo() {
-            const response = await fetch('https://notes-api-renzodotexe.cloud.okteto.net/notes/author/Renzo');
-            if (response.ok) {
-                this.responsedataAll = await response.json();
-                this.responsedataSingle = null; // Clear single note data
-                this.newNoteFormVisible = false; // Hide the form
-            } else {
-                console.error('Failed to fetch notes by Renzo');
-            }
-        }
-    }">
-        <button x-on:click="getAllNotes">GET all notes</button>
-        <button x-on:click="getData">GET first note</button>
-        <button x-on:click="getNotesByRenzo">GET notes from Renzo</button>
-        <button x-on:click="createNewNote">POST new note</button>
-
-        <div x-show="responsedataSingle !== null">
-            <!-- Display single note -->
-            <div>
-                <p>Author: <strong x-text="responsedataSingle[0]?.author"></strong></p>
-                <p>Title: <strong x-text="responsedataSingle[0]?.title"></strong></p>
-                <p>Content: <strong x-text="responsedataSingle[0]?.content"></strong></p>
-                <p>ID: <strong x-text="responsedataSingle[0]?.id"></strong></p>
-            </div>
-        </div>
-
-        <div x-show="responsedataAll !== null">
-            <!-- Display all notes -->
-            <template x-if="responsedataAll.length > 0">
-                <template x-for="(note, index) in responsedataAll" :key="index">
-                    <div>
-                        <p>Author: <strong x-text="note.author"></strong></p>
-                        <p>Title: <strong x-text="note.title"></strong></p>
-                        <p>Content: <strong x-text="note.content"></strong></p>
-                        <p>ID: <strong x-text="note.id"></strong></p>
-                        <hr>
-                    </div>
-                </template>
-            </template>
-            <template x-if="responsedataAll === null || responsedataAll.length === 0">
-                <p>Geen notities gevonden.</p>
-            </template>
-        </div>
-
-        <div x-show="newNoteFormVisible">
-            <!-- Form for creating a new note -->
-            <div>
-                <label for="author">Author:</label>
-                <input x-model="newNote.author" type="text" id="author">
-
-                <label for="title">Title:</label>
-                <input x-model="newNote.title" type="text" id="title">
-
-                <label for="content">Content:</label>
-                <textarea x-model="newNote.content" id="content"></textarea>
-
-                <button x-on:click="saveNewNote">Save new note</button>
-            </div>
-        </div>
+  <div x-show="responsedataSingle !== null">
+    <!-- Display single note -->
+    <div>
+      <p>Author: <strong x-text="responsedataSingle[0]?.author"></strong></p>
+      <p>Title: <strong x-text="responsedataSingle[0]?.title"></strong></p>
+      <p>Content: <strong x-text="responsedataSingle[0]?.content"></strong></p>
+      <p>ID: <strong x-text="responsedataSingle[0]?.id"></strong></p>
     </div>
+  </div>
+
+  <div x-show="responsedataAll !== null">
+    <!-- Display all notes -->
+    <template x-if="responsedataAll.length > 0">
+      <template x-for="(note, index) in responsedataAll" :key="index">
+        <div>
+          <p>Author: <strong x-text="note.author"></strong></p>
+          <p>Title: <strong x-text="note.title"></strong></p>
+          <p>Content: <strong x-text="note.content"></strong></p>
+          <p>ID: <strong x-text="note.id"></strong></p>
+          <hr>
+        </div>
+      </template>
+    </template>
+    <template x-if="responsedataAll === null || responsedataAll.length === 0">
+      <p>Geen notities gevonden.</p>
+    </template>
+  </div>
+
+  <div x-show="newNoteFormVisible">
+    <!-- Form for creating a new note -->
+    <div>
+      <label for="author">Author:</label>
+      <input x-model="newNote.author" type="text" id="author">
+
+      <label for="title">Title:</label>
+      <input x-model="newNote.title" type="text" id="title">
+
+      <label for="content">Content:</label>
+      <textarea x-model="newNote.content" id="content"></textarea>
+
+      <button x-on:click="saveNewNote">Save new note</button>
+    </div>
+  </div>
 </body>
 </html>
