@@ -49,8 +49,10 @@ Hieronder vind je screenshots die de werking van elk API-endpoint demonstreren.
 
 ### Bijwerken Notitie (op ID)
 
+- **Originele Waarden**
+  ![Originele Waarden](screenshots/update-note-by-id-1.png)
 - **Gewijzigde Waarden**
-  ![Gewijzigde Waarden](screenshots/update-note-by-id-1.png)
+  ![Gewijzigde Waarden](screenshots/update-note-by-id-2.png)
 
 ### Verwijderen Notitie (op ID)
 

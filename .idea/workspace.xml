@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for GET ALL + CREATE NEW">
+    <list default="true" id="6f9106ee-f66c-4915-b0a4-c00747436f3f" name="Changes" comment="Demo screenshots for GET Note By ID">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,23 +120,7 @@
       <workItem from="1703944671590" duration="28341000" />
       <workItem from="1704023360512" duration="1836000" />
       <workItem from="1704031563373" duration="1121000" />
-      <workItem from="1704032836187" duration="2273000" />
-    </task>
-    <task id="LOCAL-00015" summary="Gitignore update">
-      <option name="closed" value="true" />
-      <created>1703602858867</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1703602858867</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Gitignore update">
-      <option name="closed" value="true" />
-      <created>1703602924984</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1703602924984</updated>
+      <workItem from="1704032836187" duration="2558000" />
     </task>
     <task id="LOCAL-00017" summary="Gitignore update">
       <option name="closed" value="true" />
@@ -514,7 +498,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704035043784</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="Reformat">
+      <option name="closed" value="true" />
+      <created>1704035130974</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1704035130974</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Demo screenshots for GET Note By ID">
+      <option name="closed" value="true" />
+      <created>1704035343437</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1704035343437</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +533,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Deprecated warnings fixed by changing affected lines" />
     <MESSAGE value="Only testing get-endpoints for now" />
     <MESSAGE value="Testing in github" />
     <MESSAGE value="Added reset database function" />
@@ -551,14 +550,15 @@
     <MESSAGE value="Update frontend" />
     <MESSAGE value="CORS" />
     <MESSAGE value="GET and POST endpoints in frontend" />
-    <MESSAGE value="Reformat" />
     <MESSAGE value="Fixed issue with overlap" />
     <MESSAGE value="Empty field detection in POST" />
     <MESSAGE value="Token changed" />
     <MESSAGE value="Basic styling for nice layout" />
     <MESSAGE value="OpenAPI Docs in README" />
     <MESSAGE value="Demo screenshots for GET ALL + CREATE NEW" />
-    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for GET ALL + CREATE NEW" />
+    <MESSAGE value="Reformat" />
+    <MESSAGE value="Demo screenshots for GET Note By ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="Demo screenshots for GET Note By ID" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/final_project_api_dev$main.coverage" NAME="main Coverage Results" MODIFIED="1703972150411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app" />
