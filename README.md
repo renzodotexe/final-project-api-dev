@@ -60,17 +60,17 @@ Hieronder vind je screenshots die de werking van elk API-endpoint demonstreren.
   ![Succes](screenshots/delete-note-1.png)
 - **Fout bij ongeldige ID**
   ![Fout bij ongeldige ID](screenshots/delete-note-2.png)
-- **Verkeerd datatype**
+- **Verkeerd Datatype**
   ![Verkeerd datatype](screenshots/delete-note-3.png)
 - **Niet Geautoriseerd**
   ![Niet Geautoriseerd](screenshots/delete-note-4.png)
 
 ### Ophalen Specifieke Notitie (op Auteur)
 
-- **Geldige ID**
-  ![Geldige ID](screenshots/get-note-by-author-1.png)
-- **Ongeldige ID**
-  ![Ongeldige ID](screenshots/get-note-by-author-2.png)
+- **Geldige Auteur**
+  ![Geldige Auteur](screenshots/get-note-by-author-1.png)
+- **Ongeldige Auteur**
+  ![Ongeldige Auteur](screenshots/get-note-by-author-2.png)
 
 ### Reset Database
 
